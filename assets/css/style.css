@@ -1,0 +1,328 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video{
+  margin:0;
+  padding:0;
+  border:0;
+  font-size:100%;
+  font:inherit;
+  vertical-align:baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section{
+  display:block;
+}
+*[hidden]{
+  display:none;
+}
+
+body{
+  line-height:1;
+}
+
+menu, ol, ul{
+  list-style:none;
+}
+
+blockquote, q{
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after{
+  content:"";
+  content:none;
+}
+
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+.header{
+  background-color:#EEEFF1;
+}
+.header ol{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:horizontal;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:row;
+          flex-direction:row;
+  -ms-flex-wrap:wrap;
+      flex-wrap:wrap;
+  gap:7%;
+}
+.header li{
+  padding-bottom:30px;
+}
+.header li a{
+  text-decoration:none;
+  text-transform:uppercase;
+  color:#000000;
+  font-size:max(16px, 1.5vw);
+}
+.header li :hover{
+  color:#34547A;
+  font-weight:500;
+}
+
+.header__navbar{
+  padding-top:79px;
+  padding-bottom:10%;
+}
+.button{
+  background-color:#34547A;
+  padding:2vw;
+  width:max(25vw, 200px);
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+}
+.button__text{
+  color:#FFFFFF;
+  text-transform:uppercase;
+  letter-spacing:0.15em;
+  font-size:max(2vw, 16px);
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+}
+
+.top{
+  padding-bottom:10%;
+}
+.top h1{
+  font-size:max(4vw, 48px);
+  font-weight:500;
+  padding-bottom:7%;
+}
+.top__description{
+  color:#727272;
+  line-height:max(3vw, 26px);
+  font-size:max(1.5vw, 16px);
+  letter-spacing:0.025em;
+  width:max(60%, 330px);
+  padding-bottom:7%;
+}
+.footer{
+  background:#34547A;
+  padding-block:3%;
+}
+.footer__description{
+  color:#FFFFFF;
+  font-weight:500;
+  font-size:max(21px, 2.5vw);
+  letter-spacing:0.01em;
+  padding-bottom:2%;
+}
+.footer__copyright{
+  color:#FFFFFF;
+  font-size:max(13px, 0.8vw);
+  letter-spacing:0.01em;
+}
+
+*{
+  -webkit-box-sizing:border-box;
+          box-sizing:border-box;
+}
+
+body{
+  font-family:"Roboto", sans-serif;
+  letter-spacing:0.1em;
+  font-size:16px;
+  font-weight:400;
+}
+
+.container{
+  width:calc(100vw - 40px);
+  padding:0 20px;
+  margin:0 auto;
+}
+
+.about{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:column;
+          flex-direction:column;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+  width:max(50vw, 300px);
+  padding-top:12%;
+  padding-bottom:10%;
+}
+
+h2{
+  font-size:max(32px, 3vw);
+  font-weight:500;
+  text-align:center;
+  padding-bottom:7%;
+}
+
+.description{
+  color:#727272;
+  line-height:max(3vw, 26px);
+  font-size:max(1.5vw, 16px);
+  letter-spacing:0.025em;
+  text-align:center;
+}
+
+.project__container{
+  background:#34547A;
+  padding:10% 0;
+}
+
+.project{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+      flex-wrap:wrap;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+  padding-bottom:4vw;
+  gap:4vw;
+}
+
+.project__item{
+  color:#FFFFFF;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:column;
+          flex-direction:column;
+  height:max(4vw, 50px);
+  width:max(12vw, 141px);
+  background:no-repeat url(../images/project2.svg);
+  padding-left:max(5vw, 70px);
+  letter-spacing:0.05em;
+  font-size:max(1.5vw, 16px);
+  line-height:max(1.5vw, 16px);
+}
+
+.project__item span{
+  font-size:max(1.5vw, 16px);
+}
+
+.main{
+  background-color:#EEEFF1;
+  padding-block:10%;
+}
+
+.main__container{
+  width:max(50vw, 300px);
+  padding-bottom:7%;
+  margin:0 auto;
+}
+
+.main__content{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:column;
+          flex-direction:column;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+}
+
+iframe{
+  width:100%;
+  height:55vw;
+}
+
+@media (max-width: 375px){
+  .header__navbar{
+    padding-top:30px;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    padding-bottom:40px;
+  }
+  .header__list{
+    -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    gap:20px;
+  }
+  .header__list a{
+    font-size:16px;
+  }
+  .top h1{
+    font-size:36px;
+    font-weight:500;
+    text-align:center;
+  }
+  .top__description{
+    width:100%;
+    text-align:center;
+  }
+  .top button{
+    margin:0 auto;
+  }
+  .container{
+    width:355px;
+    padding:0 10px;
+    margin:0 auto;
+  }
+  .about{
+    padding-block:50px;
+  }
+  .project__container{
+    padding-block:50px;
+  }
+  .project{
+    -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+    gap:25px;
+  }
+  .project__item{
+    padding-left:60px;
+  }
+  .main__container{
+    width:100%;
+    padding-bottom:58px;
+    margin:0 auto;
+  }
+  iframe{
+    width:335px;
+    height:200px;
+  }
+}
